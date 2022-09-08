@@ -1,0 +1,30 @@
+
+# START wordpressBruteForceFix_2
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{REQUEST_METHOD} POST
+    RewriteCond %{HTTP_REFERER} !^http://(.*)?northerndocksstudio\.nl [NC]
+    RewriteCond %{HTTP_REFERER} !^https://(.*)?northerndocksstudio\.nl [NC]
+    RewriteCond %{REQUEST_URI} ^(.*)?wp-login\.php(.*)$ [OR]
+    RewriteCond %{REQUEST_URI} ^(.*)?wp-admin$
+    RewriteRule ^(.*)$ - [F]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+
+# END wordpressBruteforceFix_2
+
+# BEGIN wordpressXmlrpcFix
+<files xmlrpc.php>                                                                      
+    order allow,deny                                                                    
+    deny from all                                                                       
+    </files>
+# END wordpressXmlrpcFix

@@ -1,0 +1,24 @@
+/*
+Theme Name: Oriëntatie pathways theme
+Author:		Raymond Zechner
+*/
+:root {
+  --sky: #B7C4CF;
+  --sand: #EEE3CB;
+  --clay: #D7C0AE;
+  --earth: #967E76;
+}
+
+
+body {
+	background: var(--clay);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
+header {
+	background: var(--sky);
+}
+
+
+.container.pt-5.pb-5:nth-child(2) {	background: var(--sand);	height: 100vh;}footer {	background: var(--earth);	height: 5em;}
