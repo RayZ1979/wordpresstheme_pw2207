@@ -2,7 +2,7 @@
 
 <div class="container pt-5 pb-5">
 
-<i class="fa-solid fa-user"></i>
+
 <h1><?php the_title();?></h1>
 
 

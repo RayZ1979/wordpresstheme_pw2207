@@ -9,6 +9,28 @@ Author:		Raymond Zechner
   --earth: #967E76;
 }
 
+header {
+	background: var(--sky);
+}
+
+.menu-main-menu-container {
+	width: 100%;
+}
+
+#menu-main-menu {
+	display: flex;
+	justify-content: space-evenly;
+  list-style: none;
+}
+
+.menu-main-menu-container a {
+	text-decoration: none;
+	color: var(--earth);
+	font-size: 1.5em;
+}
+.menu-main-menu-container a:hover {
+	color: grey;
+}
 
 body {
 	background: var(--clay);
@@ -16,9 +38,98 @@ body {
 	font-weight: 300;
 }
 
-header {
+h1 {
+	text-align: center;
+	font-weight: 200;
+	margin-bottom: 1em;
+}
+
+.container.pt-5.pb-5:nth-child(2) {	background: var(--sand);}
+
+
+.card {
+	background: var(--clay);
+}
+.card .btn.btn-success {
 	background: var(--sky);
+	border-color: var(--earth);
+	color: var(--earth);
+}
+.btn.btn-success:hover {
+	background: gray;
+	color: #fff;
+}
+
+.legend {
+	list-style: none;
+	padding: 0;
+}
+.legend li:nth-child(1) {
+	background: green;
+}
+.legend li:nth-child(2) {
+	background: yellow;
+}
+.legend li:nth-child(3) {
+	background: orange;
+}
+.legend li:nth-child(4) {
+	background: red;
 }
 
 
-.container.pt-5.pb-5:nth-child(2) {	background: var(--sand);	height: 100vh;}footer {	background: var(--earth);	height: 5em;}
+table {
+	width: 100%;
+	height: 500px;
+}
+tr {
+	border: 1px solid;
+}
+tr:nth-child(1) {
+	background: green;
+}
+
+tr:nth-child(2) td:nth-child(3) {
+	background-color: yellow;
+}
+tr:nth-child(2) td:nth-child(4) {
+	background-color: orange;
+}
+tr:nth-child(2) td:nth-child(5) {
+	background-color: orange;
+}
+
+tr:nth-child(3) td:nth-child(4) {
+	background-color: red;
+}tr:nth-child(3) td:nth-child(5) {
+	background-color: yellow;
+}
+
+tr:nth-child(4) td:nth-child(4) {
+	background-color: orange;
+}tr:nth-child(4) td:nth-child(5) {
+	background-color: orange;
+}
+
+tr:nth-child(5) td:nth-child(4) {
+	background-color: orange;
+}tr:nth-child(5) td:nth-child(5) {
+	background-color: orange;
+}
+
+tr:nth-child(6) td:nth-child(4) {
+	background-color: orange;
+}tr:nth-child(6) td:nth-child(5) {
+	background-color: red;
+}
+
+
+td {
+	border: 1px solid;
+	width: 14%;
+	text-align: center;
+}
+
+
+
+footer {	background: var(--earth);	height: 5em;}

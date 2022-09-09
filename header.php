@@ -23,6 +23,8 @@
 
 <div class="container pt-5 pb-5">
 
+
+<nav class="navbar navbar-expand-lg">
 	<?php wp_nav_menu(
 	
 		array(
@@ -33,6 +35,9 @@
 		)
 	
 	);?>
+
+
+</nav>
 </div>	
 
 </header>
